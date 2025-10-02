@@ -1,5 +1,10 @@
 import { menu, cadastrar, listar, buscar, editar, alterarDisp, 
-    remover, listarDisp, buscarAutor, filtrarGenero } from './biblioteca.js';
+    remover, listarDisp, buscarAutor, filtrarGenero, 
+    orderAnoPub,
+    cUser,
+    rEmprestimo,
+    listUser,
+    relatorio} from './biblioteca.js';
 
 let opcao = -1;
 while(opcao != 0){
@@ -31,6 +36,27 @@ while(opcao != 0){
             break;
         case 9:
             filtrarGenero();
+            break;
+        case 10:
+            orderAnoPub();
+            break;
+        case 11: 
+            listarDisp();
+            break;
+        case 12:
+            cUser();
+            break;
+        case 13:
+            listUser();
+            break;
+        case 14:
+            rEmprestimo();
+            break;
+        case 15:
+            relatorio();
+            break;
+        case 0:
+            console.log('Sistema encerrado.')
             break;
     }
 }
